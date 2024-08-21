@@ -30,7 +30,7 @@ $font-weight-normal: 400;
     --desaturatedBlue: #{$desaturated-blue};
     --paleBlue: #{$pale-blue};
     --primary-color: var(--blue);
-    --font-family: #{$font-family}; 
+    --font-family: #{$font-family};
     --font-size-body: #{$font-size-body};
     --font-weight-normal: #{$font-weight-normal};
 }
@@ -59,66 +59,120 @@ main {
     flex-direction: column;
     margin: 0;
     padding: 0;
-}
 
-.card-user-card {
-    display: flex;
-    flex-direction: column;
-    margin: 1.5rem auto;
-    width: 80%;
-    background-color: var(--darkBlue);
-    border-radius: 1rem;
-
-    .user-info {
+    .card-user-card,
+    #cards-container {
         display: flex;
-        flex-direction: row;
-        justify-content: space-around;
-        align-content: space-evenly;
-        padding: 2rem;
-        background-color: var(--blue); 
+        flex-direction: column;
+        margin: 1.5rem auto;
+        width: 80%;
         border-radius: 1rem;
-        color: white;
-
-        img {
-            width: 32%;
-            border: solid 3px white;
-            border-radius: 50%;
-            margin-right: 1rem;
-        }
-
-        #user-name{
-            display: flex;
-            flex-direction: column;
-            justify-content: space-evenly;
-            margin: 0;
-            padding: 0;
-
-            h1{
-                font-size: 22px;
-                font-weight: 100;
-            }
-            p{
-                color: $pale-blue;
-            }
-        }
     }
 
-    .timeline-nav {
-        padding: 2rem;
+    .card-user-card {
+        background-color: var(--darkBlue);
 
-        #timeline {
+        .user-info {
             display: flex;
             flex-direction: row;
-            justify-content: space-between;
-        }
-
-        button {
-            all: unset;
-            color: $pale-blue;
-        }
-
-        button:active{
+            justify-content: space-around;
+            align-content: space-evenly;
+            padding: 2rem;
+            background-color: var(--blue);
+            border-radius: 1rem;
             color: white;
+
+            img {
+                width: 32%;
+                border: solid 3px white;
+                border-radius: 50%;
+                margin-right: 1rem;
+            }
+
+            #user-name {
+                display: flex;
+                flex-direction: column;
+                justify-content: space-evenly;
+                margin: 0;
+                padding: 0;
+
+                h1 {
+                    font-size: 22px;
+                    font-weight: 100;
+                }
+
+                p {
+                    color: $pale-blue;
+                }
+            }
+        }
+
+        .timeline-nav {
+            padding: 2rem;
+
+            #timeline {
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+            }
+
+            button {
+                all: unset;
+                color: $pale-blue;
+            }
+
+            button:active {
+                color: white;
+            }
         }
     }
+
+    #cards-container {
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+
+        .time-card {
+            background-color: var(--darkBlue);
+            border-radius: 1rem;
+            color: white;
+
+            .color-banner {
+                border-radius: 1rem 1rem 0 0;
+            }
+
+            .card-content {
+                padding: 1.5rem;
+                border-radius: 1rem;
+            }
+
+            .category-title,
+            .time-info {
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                align-items: center;
+                margin-bottom: 1rem;
+            }
+
+            h3 {
+                font-size: 20px;
+            }
+
+            p.current-duration {
+                font-size: 35px;
+                font-weight: 100;
+            }
+
+            p.previous-time {
+                display: flex;
+                justify-self: flex-end;
+                color: $pale-blue;
+                width: 50%;
+                font-size: 16px;
+            }
+        }
+
+    }
+
 }

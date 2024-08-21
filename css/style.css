@@ -41,16 +41,18 @@ main {
   margin: 0;
   padding: 0;
 }
-
-.card-user-card {
+main .card-user-card,
+main #cards-container {
   display: flex;
   flex-direction: column;
   margin: 1.5rem auto;
   width: 80%;
-  background-color: var(--darkBlue);
   border-radius: 1rem;
 }
-.card-user-card .user-info {
+main .card-user-card {
+  background-color: var(--darkBlue);
+}
+main .card-user-card .user-info {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
@@ -60,40 +62,79 @@ main {
   border-radius: 1rem;
   color: white;
 }
-.card-user-card .user-info img {
+main .card-user-card .user-info img {
   width: 32%;
   border: solid 3px white;
   border-radius: 50%;
   margin-right: 1rem;
 }
-.card-user-card .user-info #user-name {
+main .card-user-card .user-info #user-name {
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
   margin: 0;
   padding: 0;
 }
-.card-user-card .user-info #user-name h1 {
+main .card-user-card .user-info #user-name h1 {
   font-size: 22px;
   font-weight: 100;
 }
-.card-user-card .user-info #user-name p {
+main .card-user-card .user-info #user-name p {
   color: hsl(236, 100%, 87%);
 }
-.card-user-card .timeline-nav {
+main .card-user-card .timeline-nav {
   padding: 2rem;
 }
-.card-user-card .timeline-nav #timeline {
+main .card-user-card .timeline-nav #timeline {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
 }
-.card-user-card .timeline-nav button {
+main .card-user-card .timeline-nav button {
   all: unset;
   color: hsl(236, 100%, 87%);
 }
-.card-user-card .timeline-nav button:active {
+main .card-user-card .timeline-nav button:active {
   color: white;
+}
+main #cards-container {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+main #cards-container .time-card {
+  background-color: var(--darkBlue);
+  border-radius: 1rem;
+  color: white;
+}
+main #cards-container .time-card .color-banner {
+  border-radius: 1rem 1rem 0 0;
+}
+main #cards-container .time-card .card-content {
+  padding: 1.5rem;
+  border-radius: 1rem;
+}
+main #cards-container .time-card .category-title,
+main #cards-container .time-card .time-info {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+main #cards-container .time-card h3 {
+  font-size: 20px;
+}
+main #cards-container .time-card p.current-duration {
+  font-size: 35px;
+  font-weight: 100;
+}
+main #cards-container .time-card p.previous-time {
+  display: flex;
+  justify-self: flex-end;
+  color: hsl(236, 100%, 87%);
+  width: 50%;
+  font-size: 16px;
 }
 
 /*# sourceMappingURL=style.css.map */

@@ -5,17 +5,17 @@
     "banner": "./images/icon-work.svg",
     "timeframes": {
       "daily": {
-        "category": "daily",
+        "category": "Day",
         "current": 5,
         "previous": 7
       },
       "weekly": {
-        "category": "weekly",
+        "category": "Week",
         "current": 32,
         "previous": 36
       },
       "monthly": {
-        "category": "monthly",
+        "category": "Month",
         "current": 103,
         "previous": 128
       }
@@ -27,17 +27,17 @@
     "banner": "./images/icon-play.svg",
     "timeframes": {
       "daily": {
-        "category":"daily",
+        "category":"Day",
         "current": 1,
         "previous": 2
       },
       "weekly": {
-        "category":"weekly",
+        "category":"Week",
         "current": 10,
         "previous": 8
       },
       "monthly": {
-        "category":"monthly",
+        "category":"Month",
         "current": 23,
         "previous": 29
       }
@@ -49,17 +49,17 @@
     "banner": "./images/icon-study.svg",
     "timeframes": {
       "daily": {
-        "category":"daily",
+        "category":"Day",
         "current": 0,
         "previous": 1
       },
       "weekly": {
-        "category":"weekly",
+        "category":"Week",
         "current": 4,
         "previous": 7
       },
       "monthly": {
-        "category":"monthly",
+        "category":"Month",
         "current": 13,
         "previous": 19
       }
@@ -71,17 +71,17 @@
     "banner":"./images/icon-exercise.svg",
     "timeframes": {
       "daily": {
-        "category":"daily",
+        "category":"Day",
         "current": 1,
         "previous": 1
       },
       "weekly": {
-        "category":"weekly",
+        "category":"Week",
         "current": 4,
         "previous": 5
       },
       "monthly": {
-        "category":"monthly",
+        "category":"Month",
         "current": 11,
         "previous": 18
       }
@@ -93,17 +93,17 @@
     "banner": "./images/icon-social.svg",
     "timeframes": {
       "daily": {
-        "category":"daily",
+        "category":"Day",
         "current": 1,
         "previous": 3
       },
       "weekly": {
-        "category":"weekly",
+        "category":"Week",
         "current": 5,
         "previous": 10
       },
       "monthly": {
-        "category":"monthly",
+        "category":"Month",
         "current": 21,
         "previous": 23
       }
@@ -115,17 +115,17 @@
     "banner":"./images/icon-self-care.svg",
     "timeframes": {
       "daily": {
-        "category":"daily",
+        "category":"Day",
         "current": 0,
         "previous": 1
       },
       "weekly": {
-        "category":"weekly",
+        "category":"Week",
         "current": 2,
         "previous": 2
       },
       "monthly": {
-        "category":"monthly",
+        "category":"Month",
         "current": 7,
         "previous": 11
       }
