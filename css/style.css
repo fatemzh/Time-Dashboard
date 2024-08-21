@@ -73,6 +73,10 @@ main {
   margin: 0;
   padding: 0;
 }
+.card-user-card .user-info #user-name h1 {
+  font-size: 22px;
+  font-weight: 100;
+}
 .card-user-card .user-info #user-name p {
   color: hsl(236, 100%, 87%);
 }
