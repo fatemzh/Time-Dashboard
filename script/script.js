@@ -1,4 +1,3 @@
-// Fetch the JSON data
 fetch('./data.json')
   .then(response => response.json())
   .then(data => {
@@ -31,7 +30,7 @@ const populateCards = (data, timeframe) => {
         </div>
         <div id="time" class="time-info">
           <p class="current-duration">${item.timeframes[timeframe].current}hrs</p>
-          <p class="previous-time">Previous - ${item.timeframes[timeframe].previous}hrs</p>
+          <p class="previous-time">Last ${item.timeframes[timeframe].category} - ${item.timeframes[timeframe].previous}hrs</p>
         </div>
       </div>
     `;
