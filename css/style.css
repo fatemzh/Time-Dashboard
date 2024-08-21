@@ -1,3 +1,95 @@
+:root {
+  --blue: hsl(246, 80%, 60%);
+  --lightRedWork: hsl(15, 100%, 70%);
+  --softBlue: hsl(195, 74%, 62%);
+  --lightRedStudy: hsl(348, 100%, 68%);
+  --limeGreen: hsl(145, 58%, 55%);
+  --violet: hsl(264, 64%, 52%);
+  --softOrange: hsl(43, 84%, 65%);
+  --veryDarkBlue: hsl(226, 43%, 10%);
+  --darkBlue: hsl(235, 46%, 20%);
+  --desaturatedBlue: hsl(235, 45%, 61%);
+  --paleBlue: hsl(236, 100%, 87%);
+  --primary-color: var(--blue);
+  --font-family: Rubik, sans-serif;
+  --font-size-body: 18px;
+  --font-weight-normal: 400;
+}
 
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: var(--font-family);
+  font-size: var(--font-size-body);
+  font-weight: var(--font-weight-normal);
+}
+
+html,
+body {
+  font-family: var(--font-family);
+  font-size: var(--font-size-body);
+  color: var(--veryDarkBlue);
+  background-color: var(--veryDarkBlue);
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  padding: 0;
+}
+
+.card-user-card {
+  display: flex;
+  flex-direction: column;
+  margin: 1.5rem auto;
+  width: 80%;
+  background-color: var(--darkBlue);
+  border-radius: 1rem;
+}
+.card-user-card .user-info {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-content: space-evenly;
+  padding: 2rem;
+  background-color: var(--blue);
+  border-radius: 1rem;
+  color: white;
+}
+.card-user-card .user-info img {
+  width: 32%;
+  border: solid 3px white;
+  border-radius: 50%;
+  margin-right: 1rem;
+}
+.card-user-card .user-info #user-name {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  margin: 0;
+  padding: 0;
+}
+.card-user-card .user-info #user-name p {
+  color: hsl(236, 100%, 87%);
+}
+.card-user-card .timeline-nav {
+  padding: 2rem;
+}
+.card-user-card .timeline-nav #timeline {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.card-user-card .timeline-nav button {
+  all: unset;
+  color: hsl(236, 100%, 87%);
+}
+.card-user-card .timeline-nav button:active {
+  color: white;
+}
 
 /*# sourceMappingURL=style.css.map */

@@ -3,6 +3,12 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="./css/style.css" />
     <link
       rel="icon"
@@ -13,35 +19,34 @@
     <title>Frontend Mentor | Time Tracking Dashboard</title>
   </head>
   <body>
-    <!-- User Information Card -->
-    <section class="card user-card" aria-labelledby="user-name">
-      <div class="user-info">
-        <picture>
+    <main>
+      <!-- User Information Card -->
+      <section class="card-user-card" aria-labelledby="user-name">
+        <div class="user-info">
           <img
             src="./images/image-jeremy.png"
             alt="Profile picture of Jeremy Robson"
             class="user-avatar"
           />
-        </picture>
-        <div id="user-name" class="user-name">
-          <p class="report-label">Report for</p>
-          <h1 class="user-fullname">Jeremy Robson</h1>
+          <div id="user-name" class="user-name">
+            <p class="report-label">Report for</p>
+            <h1 class="user-fullname">Jeremy Robson</h1>
+          </div>
         </div>
-      </div>
-      <nav class="timeline-nav" aria-label="Time Period Selection">
-        <div id="timeline">
-          <button id="daily" class="time-btn">Daily</button>
-          <button id="weekly" class="time-btn">Weekly</button>
-          <button id="monthly" class="time-btn">Monthly</button>
-        </div>
-      </nav>
-    </section>
+        <nav class="timeline-nav" aria-label="Time Period Selection">
+          <div id="timeline">
+            <button id="daily" class="time-btn">Daily</button>
+            <button id="weekly" class="time-btn">Weekly</button>
+            <button id="monthly" class="time-btn">Monthly</button>
+          </div>
+        </nav>
+      </section>
 
-    <!-- Dynamic Time Tracking Cards -->
-    <section id="cards-container">
-    </section>
-    
-<!-- 
+      <!-- Dynamic Time Tracking Cards -->
+      <section id="cards-container"></section>
+    </main>
+
+    <!-- 
     <footer class="attribution">
       <p>
         Challenge by
