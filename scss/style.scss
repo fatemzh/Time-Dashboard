@@ -116,12 +116,15 @@ main {
                 justify-content: space-between;
             }
 
-            button {
+            .time-btn {
                 all: unset;
                 color: $pale-blue;
+                cursor: pointer; 
+                border-radius: 0.5rem;
+                transition: color 0.3s ease;
             }
-
-            button:active {
+        
+            .time-btn.active {
                 color: white;
             }
         }

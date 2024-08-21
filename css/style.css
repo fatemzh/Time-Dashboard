@@ -90,11 +90,14 @@ main .card-user-card .timeline-nav #timeline {
   flex-direction: row;
   justify-content: space-between;
 }
-main .card-user-card .timeline-nav button {
+main .card-user-card .timeline-nav .time-btn {
   all: unset;
   color: hsl(236, 100%, 87%);
+  cursor: pointer;
+  border-radius: 0.5rem;
+  transition: color 0.3s ease;
 }
-main .card-user-card .timeline-nav button:active {
+main .card-user-card .timeline-nav .time-btn.active {
   color: white;
 }
 main #cards-container {
