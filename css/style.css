@@ -203,7 +203,12 @@ main #cards-container .time-card p.previous-time {
   }
   main .time-card .time-info {
     display: flex;
-    flex-direction: column;
+    flex-direction: column !important;
+    align-items: flex-start !important;
+    justify-content: space-around;
+  }
+  main .time-card .time-info p.current-duration {
+    margin-bottom: 0.5rem;
   }
 }
 
