@@ -209,14 +209,14 @@ main {
             height: 68%;
             width: 25%;
             margin-right: 3rem;
-            padding: 0;
 
             .user-info {
                 display: flex;
                 flex-direction: column;
+                min-height: 68%;
 
                 img {
-                    height: 30%;
+                    margin: 1rem 0;
                 }
             }
 

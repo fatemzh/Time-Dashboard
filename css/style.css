@@ -170,14 +170,14 @@ main #cards-container .time-card p.previous-time {
     height: 68%;
     width: 25%;
     margin-right: 3rem;
-    padding: 0;
   }
   main .card-user-card .user-info {
     display: flex;
     flex-direction: column;
+    min-height: 68%;
   }
   main .card-user-card .user-info img {
-    height: 30%;
+    margin: 1rem 0;
   }
   main .card-user-card nav {
     display: flex;
