@@ -151,28 +151,59 @@ main #cards-container .time-card p.previous-time {
 }
 @media screen and (min-width: 768px) {
   main {
+    display: flex;
     flex-direction: row;
-    justify-content: space-between;
-    align-items: stretch;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+    height: 100vh;
+    margin: 0rem auto;
+  }
+  main main {
+    width: 100%;
+    min-height: auto;
+    margin: auto;
   }
   main .card-user-card {
-    width: 20%;
-    margin-right: 2rem;
+    display: flex;
+    justify-content: space-around;
+    height: 68%;
+    width: 25%;
+    margin-right: 3rem;
+    padding: 0;
+  }
+  main .card-user-card .user-info {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
-    min-height: 100%;
+  }
+  main .card-user-card .user-info img {
+    height: 30%;
+  }
+  main .card-user-card nav {
+    display: flex;
+    align-content: space-around !important;
+    margin: 0;
+    padding: 1rem !important;
+    height: 100%;
+  }
+  main .card-user-card nav #timeline {
+    display: flex;
+    flex-direction: column !important;
+    padding: 1rem;
   }
   main #cards-container {
-    width: 75%;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-auto-rows: minmax(200px, auto);
+    grid-template-rows: repeat(2, auto);
     gap: 2rem;
+    width: 75%;
   }
   main .time-card {
-    height: auto;
-    margin-bottom: 0;
+    min-height: 300px;
+  }
+  main .time-card .time-info {
+    display: flex;
+    flex-direction: column;
   }
 }
 
