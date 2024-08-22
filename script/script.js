@@ -39,7 +39,7 @@ const populateCards = (data, timeframe) => {
           <h3>${item.title}</h3>
           <picture><img src="./images/icon-ellipsis.svg" alt="Options"></picture>
         </div>
-        <div id="time" class="time-info">
+        <div class="time-info">
           <p class="current-duration">${
             item.timeframes[timeframe].current
           }hrs</p>

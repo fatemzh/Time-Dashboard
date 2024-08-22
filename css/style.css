@@ -168,7 +168,7 @@ main #cards-container .time-card p.previous-time {
     display: flex;
     justify-content: space-around;
     height: 68%;
-    width: 25%;
+    width: 30%;
     margin-right: 3rem;
   }
   main .card-user-card .user-info {
